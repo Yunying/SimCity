@@ -1,0 +1,19 @@
+6
+Colin
+CammaranoHostRole 12 36
+1
+CWaiter
+CammaranoWaiterRole 17 36
+0
+CSDWaiter
+CammaranoSharedWaiterRole 17 36
+0
+CCashier
+CammaranoCashierRole 15 36
+1
+CCook
+CammaranoCookRole 15 36
+0
+CCustomer
+None 15 36
+1

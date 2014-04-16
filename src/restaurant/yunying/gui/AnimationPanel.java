@@ -1,0 +1,91 @@
+package restaurant.yunying.gui;
+
+import javax.swing.*;
+
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.List;
+import java.util.ArrayList;
+import javax.imageio.*;
+import java.awt.image.*;
+
+public class AnimationPanel extends JPanel implements ActionListener {
+
+    private final int WINDOWX = 600;
+    private final int WINDOWY = 800;
+    private Image bufferImage = null;
+    private Dimension bufferSize;
+    
+    public List<Gui> guis = new ArrayList<Gui>();
+
+
+    public AnimationPanel() {
+    	setSize(WINDOWX, WINDOWY);
+        setVisible(true);
+        
+        bufferSize = this.getSize();
+ 
+    	Timer timer = new Timer(20, this );
+    	timer.start();
+    }
+
+	public void actionPerformed(ActionEvent e) {
+		repaint();  //Will have paintComponent called
+	}
+
+    public void paintComponent(Graphics g) {
+        Graphics2D g2 = (Graphics2D)g;
+        final int TABLEX = 200;
+        final int TABLEY = 250;
+        final int TABLEWIDTH = 50;
+        final int TABLEHEIGHT = 50;
+        
+        //Clear the screen by painting a rectangle the size of the frame
+        g2.setColor(getBackground());
+        g2.fillRect(0, 0, WINDOWX, WINDOWY );
+
+        //Here is the table
+        g2.setColor(Color.ORANGE);
+        g2.fillRect(250, 450, 140, 15);
+        g.drawString("FRIDGE", 350,500);
+        g.drawString("COOK", 300, 500);
+        g2.fillRect(TABLEX+100, TABLEY, TABLEWIDTH, TABLEHEIGHT);
+        g2.fillRect(TABLEX+200, TABLEY, TABLEWIDTH, TABLEHEIGHT);
+        g2.fillRect(TABLEX, TABLEY, TABLEWIDTH, TABLEHEIGHT);//200 and 250 need to be table params
+
+       
+
+        for(Gui gui : guis) {
+            if (gui.isPresent() && !gui.isPaused()) {
+                gui.updatePosition();
+            }
+        }
+
+        for(Gui gui : guis) {
+            if (gui.isPresent()) {
+                gui.draw(g2);
+            }
+        }
+    }
+
+    public void addGui(CustomerGui gui) {
+        guis.add(gui);
+    }
+
+    public void addGui(HostGui gui) {
+        guis.add(gui);
+    }
+    
+    public void addGui(waiterGui gui){
+    	guis.add(gui);
+    }
+    
+    public void addGui(CookGui gui){
+    	guis.add(gui);
+    }
+    
+    public void addGui(CashierGui gui){
+    	guis.add(gui);
+    }
+}

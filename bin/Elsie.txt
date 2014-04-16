@@ -1,0 +1,19 @@
+6
+Yunying
+TuHostRole 12 36
+1
+EWaiter
+TuWaiterRole 17 36
+0
+ESDWaiter
+TuShareDataWaiterRole 17 36
+0
+ECashier
+TuCashierRole 15 36
+0
+ECook
+TuCookRole 15 36
+1
+ECustomer
+None 15 36
+1

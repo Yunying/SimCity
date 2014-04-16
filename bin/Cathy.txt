@@ -1,0 +1,19 @@
+6
+Cathy
+JiHostRole 12 36
+1
+JWaiter
+JiWaiterRole 15 36
+1
+JSDWaiter
+JiShareDataWaiterRole 15 36
+0
+JCook
+JiCookRole 15 36
+0
+JCashier
+JiCashierRole 15 36
+1
+JCustomer
+None 15 36
+1

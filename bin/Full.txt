@@ -1,0 +1,92 @@
+30
+Yunying
+TuHostRole 12 36
+1
+EWaiter
+TuWaiterRole 17 36
+0
+ESDWaiter
+TuShareDataWaiterRole 17 36
+0
+ECashier
+TuCashierRole 14 36
+0
+ECook
+TuCookRole 14 36
+0
+ECustomer
+None 15 36
+1
+Cathy
+JiHostRole 12 36
+1
+JWaiter
+JiWaiterRole 15 36
+1
+JSDWaiter
+JiShareDataWaiterRole 15 36
+0
+JCook
+JiCookRole 15 36
+0
+JCashier
+JiCashierRole 15 36
+1
+JCustomer
+None 15 36
+1
+Colin
+CammaranoHostRole 12 36
+1
+CWaiter
+CammaranoWaiterRole 17 36
+0
+CSDWaiter
+CammaranoSharedWaiterRole 17 36
+0
+CCashier
+CammaranoCashierRole 15 36
+1
+CCook
+CammaranoCookRole 15 36
+0
+CCustomer
+None 15 36
+1
+Kristen
+McNealHostRole 12 36
+1
+KCashier
+McNealCashierRole 15 36
+1
+KCook
+McNealCookRole 15 36
+0
+KCustomer
+None 15 36
+1
+Teller
+BankTellerRole 15 36
+1
+Teller2
+BankTellerRole 15 36
+1
+Security
+BankSecurityRole 15 36
+1
+Security2
+BankSecurityRole 15 36
+1
+MEmployee
+MarketEmployeeRole 19 36
+0
+MManager
+MarketManagerRole 10 36
+1
+Truckdriver
+TruckDriverRole 15 36
+1
+land
+LandlordRole 20 40
+1
+
